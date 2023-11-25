@@ -7,7 +7,6 @@ public class Assinantes {
    private String nome;
    private int numCel;
    private int numChamadas;
-}
 
 //Criando uma array
    private Chamada[] chamadas;
@@ -20,3 +19,14 @@ public class Assinantes {
       this.chamadas = new Chamada[numChamadas];
       this.numChamadas = 0;
    }
+
+//Pegando o CPF
+   public Long getCpf() {
+      return cpf;
+   }
+  //Retorna os resultados de uma forma mais legível
+   @Override
+   public String toString() {
+      return "CPF: " + cpf + "\nNome: " + nome + "\nnumero: " + numCel + "\nchamadas: " + numChamadas;
+   }
+}
